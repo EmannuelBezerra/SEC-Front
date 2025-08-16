@@ -26,7 +26,7 @@ export default function LoginForm() {
     clearErrors();
 
     try {
-      const response = await fetch("http://localhost:3000/api_confeitaria/autenticacao/login", {
+      const response = await fetch("https://sec-back-l4a4.onrender.com/api_confeitaria/autenticacao/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
