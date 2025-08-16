@@ -91,7 +91,7 @@ export const criarPayload = (data) => {
 };
 
 export const cadastrarUsuario = async (payload) => {
-  const response = await fetch("http://localhost:3000/api_confeitaria/usuario", {
+  const response = await fetch("https://sec-back-l4a4.onrender.com/api_confeitaria/usuario", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(payload),

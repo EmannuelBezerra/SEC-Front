@@ -5,7 +5,7 @@ export default function useRevenuesAPI() {
 
   const getApi = () =>
     axios.create({
-      baseURL: "http://localhost:3000/api_confeitaria/super/receitas", // Base URL for recipe-related routes
+      baseURL: "https://sec-back-l4a4.onrender.com/api_confeitaria/super/receitas", // Base URL for recipe-related routes
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
         "Cache-Control": "no-cache",

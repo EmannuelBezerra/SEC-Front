@@ -4,7 +4,7 @@ import axios from "axios";
 export default function useOrdersAPI() {
   const getApi = () =>
     axios.create({
-      baseURL: "http://localhost:3000/api_confeitaria",
+      baseURL: "https://sec-back-l4a4.onrender.com/api_confeitaria",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
         "Cache-Control": "no-cache",
